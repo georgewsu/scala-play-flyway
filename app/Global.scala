@@ -1,13 +1,11 @@
+import com.googlecode.flyway.core.Flyway
+
 import play.api.Application
 import play.api.GlobalSettings
 import play.api.Logger
 import play.api.Play
 import play.api.Play.current
-import scala.concurrent.Await
-import scala.util.matching.Regex
-import com.googlecode.flyway.core.Flyway
-import com.googlecode.flyway.core.api.MigrationInfo
-import play.api.db._
+import play.api.db.DB
 
 object Global extends GlobalSettings {
 
